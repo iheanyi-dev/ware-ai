@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17   # official Postgres 17 image with pgvector pre-installed
+    container_name: ware
+    restart: unless-stopped
+    environment:
+      # These pull from your .env file automatically when you run `docker compose up`
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      # Named volume so your data survives container restarts/rebuilds
+      - ware_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      # Lets other tools (and us, later) check "is Postgres actually ready to accept connections"
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  ware_pgdata:

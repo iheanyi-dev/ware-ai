@@ -1,0 +1,27 @@
+[project]
+name = "eduplatform-api"
+version = "0.1.0"
+description = "Recommendation + Chatbot AI service for the education platform"
+requires-python = ">=3.12"
+
+# Phase 0 dependencies only. We add more (SQLAlchemy, sentence-transformers,
+# anthropic SDK, etc.) in later phases, right when we actually start using them —
+# no point installing packages before there's code that imports them.
+dependencies = [
+    "fastapi>=0.115.0",       # the web framework itself
+    "uvicorn[standard]>=0.32.0",  # ASGI server that runs the FastAPI app
+    "pydantic-settings>=2.6.0",   # typed .env / environment variable loading
+    "python-dotenv>=1.0.1",       # lets uvicorn/local scripts read .env too
+    "sqlalchemy>=2.0.35",     # ORM — defines our models and queries
+    "psycopg[binary]>=3.2.0", # PostgreSQL driver (binary build = no compiler needed)
+    "asyncpg>=0.31.0",
+    "alembic>=1.13.3",        # database migrations (versioned schema changes)
+    "pgvector>=0.3.5",        # Python-side support for the Postgres `vector` column type
+]
+
+# Dev-only dependencies — not needed to run the app, only to test it.
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "httpx>=0.27.0",   # needed by FastAPI's TestClient for endpoint tests
+]

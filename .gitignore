@@ -1,0 +1,18 @@
+# Python bytecode/cache
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+
+# Virtual environment (created by uv sync)
+.venv
+
+# Real environment variables — never commit actual secrets
+.env
+
+# Trained model artifacts (Phase 2 onward) — large binary files, don't commit
+models/
+
+# Postgres data, if ever run outside Docker's named volume
+pgdata/

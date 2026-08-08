@@ -5,24 +5,18 @@ Recommendations API.
 Exposes GET /users/{user_id}/recommendations, backed by the merge logic in
 app/services/recommendation_service.py.
 
-Not yet protected by internal service auth — that's Phase 4
-(INTERNAL_API_KEY bearer token). Once that's wired in, this router should
-be added with that dependency applied, either per-route or at the
-include_router() level in your main app setup.
 """
 
 import uuid
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_db
 from app.models import User
 from app.schemas.recommendation import RecommendationResponse
-from app.services.recommendation_service import get_recommendations_for_user
-
-# app/api/routes/recommendations.py — update the router declaration
+from app.services.recommendation_service import get_recommendations_for_user, get_recommendations_by_text
 
 from app.core.security import verify_internal_api_key
 
@@ -56,3 +50,20 @@ async def get_user_recommendations(
     recommendations = await get_recommendations_for_user(db, user_id, limit=limit)
 
     return RecommendationResponse(user_id=user_id, recommendations=recommendations)
+
+@router.post("/recommendations", response_model= RecommendationResponse)
+async def get_recommendations(
+    request,
+    limit: int = Query(default=10, ge=1, le=50),
+    db: AsyncSession = Depends(get_db),
+
+):
+    """
+    Returns up to `limit` recommended courses 
+
+    """
+    text = request.text
+
+    recommendations = await get_recommendations_by_text(db, text, limit=limit)
+
+    return RecommendationResponse(recommendations=recommendations)

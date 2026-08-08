@@ -1,31 +1,3 @@
-"""
-Synthetic seed data generator.
-
-Run with: uv run python -m app.db.seed
-
-Populates instructors, courses, users, and enrollments with a deliberately
-coherent structure (not random) so that:
-  - instructor-based recommendations have something real to surface
-  - content-based (embedding) recommendations have believable category
-    clusters to learn from
-  - Phase 2's embedding fine-tuning has enough same-category / cross-category
-    signal to actually learn something, not just memorize 12 rows
-
-This script is idempotent: it wipes existing rows (in FK-safe order) before
-inserting fresh data, so it's safe to re-run any time during development.
-"""
-
-# import asyncio
-
-# from sqlalchemy import delete
-
-# from app.db.session import AsyncSessionLocal
-# from app.models import Course, Enrollment, Instructor, User
-
-# --- Raw source data -----------------------------------------------------
-# Structured as plain dicts/tuples first, converted to model instances in
-# seed(). Keeping the data separate from the insertion logic makes it easy
-# to extend (add more courses/instructors) without touching the logic below.
 
 INSTRUCTORS = [
     {"key": "ada", "name": "Ada Obi", "bio": "Full-stack developer and educator with 8 years teaching web development, specializing in JavaScript and React."},

@@ -27,9 +27,21 @@ class RecommendedCourse(BaseModel):
     # Why this course was recommended. "both" means it scored highly on
     # both instructor-based and content-based signals — the strongest
     # possible recommendation, since two independent signals agree.
-    reason: Literal["instructor", "similar_content", "both"]
+    reason: Literal["instructor", "similar_content", "both"] | None
 
 
 class RecommendationResponse(BaseModel):
-    user_id: uuid.UUID
+    user_id: uuid.UUID | None
     recommendations: list[RecommendedCourse]
+
+
+class RecommendedCourseText(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    id: uuid.UUID
+    title: str
+    description: str
+    category: str
+    price: float
+    rating: float | None
+    instructor_id: uuid.UUID
+    instructor_name: str

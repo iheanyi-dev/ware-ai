@@ -8,6 +8,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
+from app.models import Instructor
 
 # Output dimension of all-MiniLM-L6-v2 (and our fine-tuned version of it —
 # fine-tuning changes weights, not the output size). If we ever swap base
@@ -46,7 +47,7 @@ class Course(Base):
     # because a brand-new course has no ratings yet.
     rating: Mapped[float | None] = mapped_column(Numeric(3, 2), nullable=True)
 
-    # Content embedding of `title + description`, produced by the Phase 2
+    # Content embedding of `title + description`, produced by 
     # fine-tuned model. Nullable because:
     #   - existing seeded courses won't have one until the Phase 3 backfill
     #     script runs
@@ -68,7 +69,7 @@ class Course(Base):
 
     # Gives us course.instructor to access the full Instructor object,
     # not just its id — the other half of Instructor.courses.
-    instructor: Mapped["Instructor"] = relationship(back_populates="courses")
+    instructor: Mapped[Instructor] = relationship(back_populates="courses")
 
     def __repr__(self) -> str:
         return f"<Course id={self.id} title={self.title!r}>"

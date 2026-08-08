@@ -7,13 +7,22 @@ Reads instructor/course/user/enrollment data from seed_data.py and inserts
 it into the database. This script is idempotent: it wipes existing rows
 (in FK-safe order) before inserting fresh data, so it's safe to re-run any
 time during development.
+
+Populates instructors, courses, users, and enrollments with a deliberately
+coherent structure (not random) so that:
+  - instructor-based recommendations have something real to surface
+  - content-based (embedding) recommendations have believable category
+    clusters to learn from
+
+This script is idempotent: it wipes existing rows (in FK-safe order) before
+inserting fresh data, so it's safe to re-run any time during development.
 """
 
 import asyncio
 
 from sqlalchemy import delete
 
-from app.db.seed_data import COURSES, ENROLLMENTS, INSTRUCTORS, USERS
+from scripts.seed_data import COURSES, ENROLLMENTS, INSTRUCTORS, USERS
 from app.db.session import AsyncSessionLocal
 from app.models import Course, Enrollment, Instructor, User
 

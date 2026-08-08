@@ -6,7 +6,7 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
-
+from app.models import Course, User
 
 class Enrollment(Base):
     """
@@ -45,8 +45,8 @@ class Enrollment(Base):
     # back_populates is more explicit and is what we used for
     # Instructor <-> Course; backref is the more convenient shorthand for
     # this join-table case where we don't need anything else on those models.
-    course: Mapped["Course"] = relationship(backref="enrollments")
-    user: Mapped["User"] = relationship(backref="enrollments")
+    course: Mapped[Course] = relationship(backref="enrollments")
+    user: Mapped[User] = relationship(backref="enrollments")
 
     def __repr__(self) -> str:
         return f"<Enrollment user_id={self.user_id} course_id={self.course_id}>"

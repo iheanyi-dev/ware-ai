@@ -8,6 +8,8 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
 
+from app.models import Course
+
 
 class Instructor(Base):
     """
@@ -33,10 +35,8 @@ class Instructor(Base):
     )
 
     # Reverse side of Course.instructor — lets us do instructor.courses to
-    # get every course they teach. "Course" is a string here because the
-    # Course class doesn't exist yet in this file (defined in course.py);
-    # SQLAlchemy resolves the string once both classes are registered.
-    courses: Mapped[list["Course"]] = relationship(back_populates="instructor")
+    # get every course they teach. 
+    courses: Mapped[list[Course]] = relationship(back_populates="instructor")
 
     def __repr__(self) -> str:
         return f"<Instructor id={self.id} name={self.name!r}>"

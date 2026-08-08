@@ -27,12 +27,25 @@ from sqlalchemy.orm import selectinload
 from app.models import Course, Enrollment
 from app.schemas.recommendation import RecommendedCourse
 
+from app.services.embedding_service import embed_text
+
 # How many candidates to pull from EACH signal before merging. Kept higher
 # than the final result limit so the merge step (which combines/dedupes)
 # has enough material to work with — pulling exactly `limit` from each
 # source would under-fill the final list whenever the two sources overlap.
 CANDIDATES_PER_SOURCE = 15
 
+def map_course_recommended_text(course: Course) -> RecommendedCourse: 
+    return RecommendedCourse(
+            id=course.id,
+            title=course.title,
+            description=course.description,
+            category=course.category,
+            price=float(course.price),
+            rating=float(course.rating) if course.rating is not None else None,
+            instructor_id=course.instructor_id,
+            instructor_name=course.instructor.name,
+        )
 
 async def _get_enrolled_course_ids(db: AsyncSession, user_id: uuid.UUID) -> set[uuid.UUID]:
     """Shared by both recommendation functions below — every recommendation
@@ -211,3 +224,22 @@ async def get_recommendations_for_user(
     content_candidates = await get_content_based_candidates(db, user_id, enrolled_course_ids)
 
     return _merge_and_rank(instructor_candidates, content_candidates, limit)
+
+async def get_recommendations_by_text(
+        db: AsyncSession, text: str, limit:int =10
+    ) -> list[RecommendedCourse]:
+    """
+    Entry point for recommending courses based on the given text
+    """
+    embedding = embed_text(text)
+    stmt = (
+        select(Course)
+        .where(Course.embedding.is_not(None))
+        .order_by(Course.embedding.cosine_distance(embedding))
+        .limit(limit)
+    )
+    result = await db.execute(stmt)
+    results = list(result.scalars().all())
+    recommended_courses = [map_course_recommended_text(c) for c in results]
+         
+    return recommended_courses

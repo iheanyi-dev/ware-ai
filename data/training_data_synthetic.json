@@ -1,0 +1,1802 @@
+[
+  {
+    "title": "In-depth Vue.js Bootcamp",
+    "description": "A in-depth course that teaches you Vue.js, with a focus on the skills beginners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Vue.js for working professionals",
+    "description": "Create Vue.js through career-focused lessons designed for working professionals, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "React Crash Course",
+    "description": "Develop React through beginner-friendly lessons designed for career switchers, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Up-to-date Browser DevTools Bootcamp",
+    "description": "This course helps career switchers get hands-on with Browser DevTools using up-to-date projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Introduction to Single Page Applications",
+    "description": "Explore Single Page Applications from the ground up in this comprehensive course built for students.",
+    "category": "Web Development"
+  },
+  {
+    "title": "In-depth Next.js Bootcamp",
+    "description": "Master the core concepts of Next.js step by step, with in-depth examples tailored for self-taught learners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Vue.js Techniques",
+    "description": "Build the core concepts of Vue.js step by step, with industry-focused examples tailored for working professionals.",
+    "category": "Web Development"
+  },
+  {
+    "title": "WebSockets: From Zero to Job-Ready",
+    "description": "Everything students need to know about WebSockets, taught through comprehensive, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Vue.js Fundamentals",
+    "description": "Develop Vue.js from the ground up in this hands-on course built for experienced practitioners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Mastering WebSockets",
+    "description": "Master WebSockets through career-focused lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Hands-on HTML and CSS Bootcamp",
+    "description": "Explore HTML and CSS through hands-on lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Progressive Web Apps Techniques",
+    "description": "A step-by-step course that teaches you Progressive Web Apps, with a focus on the skills students need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Web Accessibility Fundamentals",
+    "description": "Understand Web Accessibility from the ground up in this beginner-friendly course built for self-taught learners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Up-to-date React Bootcamp",
+    "description": "A up-to-date course that teaches you React, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Tailwind CSS for experienced practitioners",
+    "description": "A in-depth course that teaches you Tailwind CSS, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "GraphQL for beginners",
+    "description": "Explore the core concepts of GraphQL step by step, with beginner-friendly examples tailored for beginners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Progressive Web Apps Crash Course",
+    "description": "Master Progressive Web Apps from the ground up in this hands-on course built for students.",
+    "category": "Web Development"
+  },
+  {
+    "title": "GraphQL: From Zero to Job-Ready",
+    "description": "A step-by-step course that teaches you GraphQL, with a focus on the skills career switchers need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Responsive Web Design for aspiring developers",
+    "description": "Everything aspiring developers need to know about Responsive Web Design, taught through beginner-friendly, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Responsive Web Design Techniques",
+    "description": "A career-focused course that teaches you Responsive Web Design, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Angular for small business owners",
+    "description": "Explore Angular through hands-on lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Mastering Angular",
+    "description": "This course helps aspiring developers get hands-on with Angular using industry-focused projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Progressive Web Apps for small business owners",
+    "description": "Learn Progressive Web Apps through up-to-date lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Next.js Fundamentals",
+    "description": "Everything aspiring developers need to know about Next.js, taught through step-by-step, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Node.js for working professionals",
+    "description": "Everything working professionals need to know about Node.js, taught through in-depth, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Introduction to Express.js",
+    "description": "Everything aspiring developers need to know about Express.js, taught through project-based, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Web Performance Optimization: From Zero to Job-Ready",
+    "description": "Learn Web Performance Optimization through career-focused lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Vue.js for self-taught learners",
+    "description": "A in-depth course that teaches you Vue.js, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Single Page Applications: From Zero to Job-Ready",
+    "description": "Understand Single Page Applications through hands-on lessons designed for working professionals, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Browser DevTools: From Zero to Job-Ready",
+    "description": "Everything aspiring developers need to know about Browser DevTools, taught through practical, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Node.js Crash Course",
+    "description": "This course helps students get hands-on with Node.js using up-to-date projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Express.js Techniques",
+    "description": "This course helps career switchers get hands-on with Express.js using in-depth projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Hands-on Web Performance Optimization Bootcamp",
+    "description": "Master Web Performance Optimization through hands-on lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Career-focused GraphQL Bootcamp",
+    "description": "Everything beginners need to know about GraphQL, taught through career-focused, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "HTML and CSS for beginners",
+    "description": "A hands-on course that teaches you HTML and CSS, with a focus on the skills beginners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical React for beginners",
+    "description": "A project-based course that teaches you React, with a focus on the skills beginners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Introduction to Responsive Web Design",
+    "description": "Develop Responsive Web Design from the ground up in this beginner-friendly course built for small business owners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "The Complete Next.js Course",
+    "description": "Build the core concepts of Next.js step by step, with hands-on examples tailored for career switchers.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Next.js for experienced practitioners",
+    "description": "Explore Next.js from the ground up in this step-by-step course built for experienced practitioners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Vue.js for career switchers",
+    "description": "This course helps career switchers get hands-on with Vue.js using beginner-friendly projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Angular: From Zero to Job-Ready",
+    "description": "A practical course that teaches you Angular, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "React for small business owners",
+    "description": "Build React from the ground up in this up-to-date course built for small business owners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Hands-on Browser DevTools Bootcamp",
+    "description": "A hands-on course that teaches you Browser DevTools, with a focus on the skills beginners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "The Complete TypeScript Course",
+    "description": "Build the core concepts of TypeScript step by step, with industry-focused examples tailored for aspiring developers.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Tailwind CSS for students",
+    "description": "Understand Tailwind CSS from the ground up in this industry-focused course built for students.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Beginner-friendly Frontend Testing Bootcamp",
+    "description": "Learn Frontend Testing through beginner-friendly lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Single Page Applications for beginners",
+    "description": "Everything beginners need to know about Single Page Applications, taught through project-based, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Mastering Frontend Testing",
+    "description": "A comprehensive course that teaches you Frontend Testing, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Mastering React",
+    "description": "Everything working professionals need to know about React, taught through beginner-friendly, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "The Complete HTML and CSS Course",
+    "description": "Build HTML and CSS from the ground up in this career-focused course built for beginners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Single Page Applications Techniques",
+    "description": "A in-depth course that teaches you Single Page Applications, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Responsive Web Design Fundamentals",
+    "description": "This course helps experienced practitioners get hands-on with Responsive Web Design using practical projects and real industry scenarios.",
+    "category": "Web Development"
+  },
+  {
+    "title": "GraphQL Crash Course",
+    "description": "Everything working professionals need to know about GraphQL, taught through comprehensive, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Vue.js for working professionals",
+    "description": "Master the core concepts of Vue.js step by step, with up-to-date examples tailored for working professionals.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Advanced Angular Techniques",
+    "description": "Master the core concepts of Angular step by step, with hands-on examples tailored for self-taught learners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Node.js Fundamentals",
+    "description": "Everything small business owners need to know about Node.js, taught through up-to-date, project-based lessons.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Mastering Web Performance Optimization",
+    "description": "A up-to-date course that teaches you Web Performance Optimization, with a focus on the skills beginners need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Practical Responsive Web Design for working professionals",
+    "description": "A hands-on course that teaches you Responsive Web Design, with a focus on the skills working professionals need to succeed.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Express.js Fundamentals",
+    "description": "Create Express.js through up-to-date lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Web Development"
+  },
+  {
+    "title": "React for experienced practitioners",
+    "description": "Build the core concepts of React step by step, with in-depth examples tailored for experienced practitioners.",
+    "category": "Web Development"
+  },
+  {
+    "title": "Statistics: From Zero to Job-Ready",
+    "description": "Everything students need to know about Statistics, taught through practical, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Introduction to SQL for Data Science",
+    "description": "Everything beginners need to know about SQL for Data Science, taught through hands-on, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Introduction to Machine Learning",
+    "description": "This course helps self-taught learners get hands-on with Machine Learning using career-focused projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Statistics for beginners",
+    "description": "Learn the core concepts of Statistics step by step, with in-depth examples tailored for beginners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Natural Language Processing for career switchers",
+    "description": "This course helps career switchers get hands-on with Natural Language Processing using hands-on projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Introduction to Statistics",
+    "description": "This course helps career switchers get hands-on with Statistics using practical projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Python for Data Analysis Course",
+    "description": "Explore Python for Data Analysis from the ground up in this project-based course built for aspiring developers.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Mastering Computer Vision",
+    "description": "This course helps students get hands-on with Computer Vision using practical projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Machine Learning: From Zero to Job-Ready",
+    "description": "Master the core concepts of Machine Learning step by step, with beginner-friendly examples tailored for small business owners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Beginner-friendly TensorFlow Bootcamp",
+    "description": "This course helps career switchers get hands-on with TensorFlow using beginner-friendly projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Feature Engineering Fundamentals",
+    "description": "Explore the core concepts of Feature Engineering step by step, with hands-on examples tailored for students.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Neural Networks for experienced practitioners",
+    "description": "Learn Neural Networks through up-to-date lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "PyTorch for aspiring developers",
+    "description": "Learn PyTorch through career-focused lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "SQL for Data Science Crash Course",
+    "description": "Everything self-taught learners need to know about SQL for Data Science, taught through project-based, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Data Visualization Fundamentals",
+    "description": "Master Data Visualization through career-focused lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical SQL for Data Science for beginners",
+    "description": "Explore SQL for Data Science from the ground up in this up-to-date course built for beginners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Advanced Natural Language Processing Techniques",
+    "description": "Everything self-taught learners need to know about Natural Language Processing, taught through industry-focused, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "SQL for Data Science Fundamentals",
+    "description": "Everything self-taught learners need to know about SQL for Data Science, taught through industry-focused, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Statistics Course",
+    "description": "Understand Statistics from the ground up in this industry-focused course built for career switchers.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Pandas and NumPy for students",
+    "description": "Develop the core concepts of Pandas and NumPy step by step, with industry-focused examples tailored for students.",
+    "category": "Data Science"
+  },
+  {
+    "title": "TensorFlow Crash Course",
+    "description": "Everything career switchers need to know about TensorFlow, taught through industry-focused, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Step-by-step Feature Engineering Bootcamp",
+    "description": "Everything small business owners need to know about Feature Engineering, taught through step-by-step, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Predictive Modeling for aspiring developers",
+    "description": "Learn Predictive Modeling from the ground up in this hands-on course built for aspiring developers.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Computer Vision for career switchers",
+    "description": "A practical course that teaches you Computer Vision, with a focus on the skills career switchers need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Predictive Modeling Crash Course",
+    "description": "A step-by-step course that teaches you Predictive Modeling, with a focus on the skills working professionals need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Introduction to A/B Testing",
+    "description": "Master A/B Testing from the ground up in this industry-focused course built for small business owners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Introduction to Python for Data Analysis",
+    "description": "Master Python for Data Analysis from the ground up in this industry-focused course built for working professionals.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Comprehensive Neural Networks Bootcamp",
+    "description": "Develop Neural Networks through comprehensive lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Data Cleaning for aspiring developers",
+    "description": "Everything aspiring developers need to know about Data Cleaning, taught through step-by-step, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Feature Engineering for small business owners",
+    "description": "This course helps small business owners get hands-on with Feature Engineering using career-focused projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Big Data with Spark: From Zero to Job-Ready",
+    "description": "This course helps small business owners get hands-on with Big Data with Spark using practical projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical PyTorch for career switchers",
+    "description": "This course helps career switchers get hands-on with PyTorch using in-depth projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Computer Vision Fundamentals",
+    "description": "A step-by-step course that teaches you Computer Vision, with a focus on the skills students need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Mastering PyTorch",
+    "description": "A project-based course that teaches you PyTorch, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Industry-focused Big Data with Spark Bootcamp",
+    "description": "This course helps small business owners get hands-on with Big Data with Spark using industry-focused projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "A/B Testing: From Zero to Job-Ready",
+    "description": "Create A/B Testing through career-focused lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Time Series Analysis Course",
+    "description": "Everything students need to know about Time Series Analysis, taught through industry-focused, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Big Data with Spark Fundamentals",
+    "description": "This course helps career switchers get hands-on with Big Data with Spark using step-by-step projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Predictive Modeling Course",
+    "description": "Learn Predictive Modeling from the ground up in this industry-focused course built for beginners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Pandas and NumPy for small business owners",
+    "description": "Develop Pandas and NumPy through practical lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete A/B Testing Course",
+    "description": "A hands-on course that teaches you A/B Testing, with a focus on the skills beginners need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Data Cleaning Course",
+    "description": "Learn the core concepts of Data Cleaning step by step, with comprehensive examples tailored for aspiring developers.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Natural Language Processing Course",
+    "description": "Learn the core concepts of Natural Language Processing step by step, with project-based examples tailored for small business owners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "SQL for Data Science for students",
+    "description": "Create SQL for Data Science from the ground up in this hands-on course built for students.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Mastering Big Data with Spark",
+    "description": "Master Big Data with Spark from the ground up in this project-based course built for beginners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Machine Learning for beginners",
+    "description": "Everything beginners need to know about Machine Learning, taught through beginner-friendly, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Mastering Statistics",
+    "description": "Everything career switchers need to know about Statistics, taught through practical, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Mastering Pandas and NumPy",
+    "description": "Everything working professionals need to know about Pandas and NumPy, taught through practical, project-based lessons.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Hands-on A/B Testing Bootcamp",
+    "description": "Develop A/B Testing through hands-on lessons designed for career switchers, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "TensorFlow for working professionals",
+    "description": "Explore the core concepts of TensorFlow step by step, with career-focused examples tailored for working professionals.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Practical Big Data with Spark for experienced practitioners",
+    "description": "Build Big Data with Spark from the ground up in this project-based course built for experienced practitioners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Feature Engineering: From Zero to Job-Ready",
+    "description": "Explore Feature Engineering through industry-focused lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Big Data with Spark Crash Course",
+    "description": "Create the core concepts of Big Data with Spark step by step, with step-by-step examples tailored for small business owners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "The Complete Computer Vision Course",
+    "description": "Develop the core concepts of Computer Vision step by step, with career-focused examples tailored for small business owners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Python for Data Analysis: From Zero to Job-Ready",
+    "description": "A project-based course that teaches you Python for Data Analysis, with a focus on the skills small business owners need to succeed.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Time Series Analysis Crash Course",
+    "description": "Learn Time Series Analysis from the ground up in this project-based course built for students.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Step-by-step Computer Vision Bootcamp",
+    "description": "Develop Computer Vision from the ground up in this step-by-step course built for experienced practitioners.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Predictive Modeling for small business owners",
+    "description": "Explore Predictive Modeling through step-by-step lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Industry-focused TensorFlow Bootcamp",
+    "description": "Understand the core concepts of TensorFlow step by step, with industry-focused examples tailored for career switchers.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Advanced Time Series Analysis Techniques",
+    "description": "This course helps small business owners get hands-on with Time Series Analysis using up-to-date projects and real industry scenarios.",
+    "category": "Data Science"
+  },
+  {
+    "title": "Accessibility in Design: From Zero to Job-Ready",
+    "description": "Understand the core concepts of Accessibility in Design step by step, with project-based examples tailored for self-taught learners.",
+    "category": "Design"
+  },
+  {
+    "title": "Beginner-friendly Typography Bootcamp",
+    "description": "Build the core concepts of Typography step by step, with beginner-friendly examples tailored for students.",
+    "category": "Design"
+  },
+  {
+    "title": "UX Research: From Zero to Job-Ready",
+    "description": "Master the core concepts of UX Research step by step, with beginner-friendly examples tailored for aspiring developers.",
+    "category": "Design"
+  },
+  {
+    "title": "Hands-on Accessibility in Design Bootcamp",
+    "description": "Explore the core concepts of Accessibility in Design step by step, with hands-on examples tailored for students.",
+    "category": "Design"
+  },
+  {
+    "title": "Design Systems for self-taught learners",
+    "description": "Learn Design Systems from the ground up in this practical course built for self-taught learners.",
+    "category": "Design"
+  },
+  {
+    "title": "Usability Testing for aspiring developers",
+    "description": "Everything aspiring developers need to know about Usability Testing, taught through in-depth, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Typography for aspiring developers",
+    "description": "Everything aspiring developers need to know about Typography, taught through step-by-step, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced Typography Techniques",
+    "description": "A step-by-step course that teaches you Typography, with a focus on the skills small business owners need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Mastering UI Design",
+    "description": "This course helps students get hands-on with UI Design using step-by-step projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Interaction Design for working professionals",
+    "description": "A career-focused course that teaches you Interaction Design, with a focus on the skills working professionals need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Mastering Figma",
+    "description": "Everything students need to know about Figma, taught through hands-on, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Branding and Identity Crash Course",
+    "description": "A career-focused course that teaches you Branding and Identity, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Branding and Identity Fundamentals",
+    "description": "Everything experienced practitioners need to know about Branding and Identity, taught through step-by-step, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Wireframing and Prototyping for students",
+    "description": "Everything students need to know about Wireframing and Prototyping, taught through career-focused, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Beginner-friendly Accessibility in Design Bootcamp",
+    "description": "Understand the core concepts of Accessibility in Design step by step, with beginner-friendly examples tailored for working professionals.",
+    "category": "Design"
+  },
+  {
+    "title": "Introduction to Design Thinking",
+    "description": "Everything working professionals need to know about Design Thinking, taught through practical, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "In-depth Accessibility in Design Bootcamp",
+    "description": "Build the core concepts of Accessibility in Design step by step, with in-depth examples tailored for small business owners.",
+    "category": "Design"
+  },
+  {
+    "title": "Step-by-step Accessibility in Design Bootcamp",
+    "description": "Build the core concepts of Accessibility in Design step by step, with step-by-step examples tailored for students.",
+    "category": "Design"
+  },
+  {
+    "title": "Practical Branding and Identity for career switchers",
+    "description": "A industry-focused course that teaches you Branding and Identity, with a focus on the skills career switchers need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "UX Research Fundamentals",
+    "description": "Everything beginners need to know about UX Research, taught through practical, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Practical Accessibility in Design for students",
+    "description": "Everything students need to know about Accessibility in Design, taught through industry-focused, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Interaction Design for small business owners",
+    "description": "This course helps small business owners get hands-on with Interaction Design using hands-on projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Accessibility in Design for self-taught learners",
+    "description": "Learn Accessibility in Design through career-focused lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Design Systems for beginners",
+    "description": "A in-depth course that teaches you Design Systems, with a focus on the skills beginners need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Interaction Design Crash Course",
+    "description": "This course helps small business owners get hands-on with Interaction Design using in-depth projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced Design Thinking Techniques",
+    "description": "This course helps small business owners get hands-on with Design Thinking using hands-on projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Introduction to Color Theory",
+    "description": "Explore the core concepts of Color Theory step by step, with hands-on examples tailored for self-taught learners.",
+    "category": "Design"
+  },
+  {
+    "title": "The Complete Wireframing and Prototyping Course",
+    "description": "Everything small business owners need to know about Wireframing and Prototyping, taught through in-depth, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "UI Design Fundamentals",
+    "description": "Learn the core concepts of UI Design step by step, with hands-on examples tailored for small business owners.",
+    "category": "Design"
+  },
+  {
+    "title": "UX Research for experienced practitioners",
+    "description": "Explore UX Research from the ground up in this up-to-date course built for experienced practitioners.",
+    "category": "Design"
+  },
+  {
+    "title": "Industry-focused Motion Design Bootcamp",
+    "description": "Everything small business owners need to know about Motion Design, taught through industry-focused, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Color Theory for small business owners",
+    "description": "A step-by-step course that teaches you Color Theory, with a focus on the skills small business owners need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Typography: From Zero to Job-Ready",
+    "description": "Create Typography through in-depth lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Practical UI Design for career switchers",
+    "description": "Learn UI Design through practical lessons designed for career switchers, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Mastering Usability Testing",
+    "description": "This course helps experienced practitioners get hands-on with Usability Testing using hands-on projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Usability Testing: From Zero to Job-Ready",
+    "description": "This course helps students get hands-on with Usability Testing using industry-focused projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "The Complete Design Systems Course",
+    "description": "A up-to-date course that teaches you Design Systems, with a focus on the skills small business owners need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "The Complete Design Critique and Feedback Course",
+    "description": "Learn the core concepts of Design Critique and Feedback step by step, with hands-on examples tailored for aspiring developers.",
+    "category": "Design"
+  },
+  {
+    "title": "Design Critique and Feedback Fundamentals",
+    "description": "Everything students need to know about Design Critique and Feedback, taught through comprehensive, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Practical Mobile App Design for small business owners",
+    "description": "This course helps small business owners get hands-on with Mobile App Design using practical projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Practical Color Theory for self-taught learners",
+    "description": "This course helps self-taught learners get hands-on with Color Theory using up-to-date projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Beginner-friendly Interaction Design Bootcamp",
+    "description": "Everything self-taught learners need to know about Interaction Design, taught through beginner-friendly, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced Wireframing and Prototyping Techniques",
+    "description": "Build Wireframing and Prototyping from the ground up in this industry-focused course built for career switchers.",
+    "category": "Design"
+  },
+  {
+    "title": "Introduction to Interaction Design",
+    "description": "This course helps experienced practitioners get hands-on with Interaction Design using industry-focused projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced UI Design Techniques",
+    "description": "Develop UI Design through up-to-date lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Motion Design: From Zero to Job-Ready",
+    "description": "Develop Motion Design through hands-on lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Introduction to Accessibility in Design",
+    "description": "Explore Accessibility in Design through industry-focused lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "The Complete Interaction Design Course",
+    "description": "Develop Interaction Design from the ground up in this project-based course built for students.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced UX Research Techniques",
+    "description": "Create UX Research from the ground up in this up-to-date course built for self-taught learners.",
+    "category": "Design"
+  },
+  {
+    "title": "Accessibility in Design Crash Course",
+    "description": "Build Accessibility in Design through up-to-date lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Design"
+  },
+  {
+    "title": "Mastering Design Systems",
+    "description": "This course helps students get hands-on with Design Systems using beginner-friendly projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Design Critique and Feedback for beginners",
+    "description": "Learn the core concepts of Design Critique and Feedback step by step, with comprehensive examples tailored for beginners.",
+    "category": "Design"
+  },
+  {
+    "title": "Industry-focused Color Theory Bootcamp",
+    "description": "Everything self-taught learners need to know about Color Theory, taught through industry-focused, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Mastering Wireframing and Prototyping",
+    "description": "Everything aspiring developers need to know about Wireframing and Prototyping, taught through practical, project-based lessons.",
+    "category": "Design"
+  },
+  {
+    "title": "Career-focused Motion Design Bootcamp",
+    "description": "This course helps experienced practitioners get hands-on with Motion Design using career-focused projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "Interaction Design: From Zero to Job-Ready",
+    "description": "Explore the core concepts of Interaction Design step by step, with comprehensive examples tailored for students.",
+    "category": "Design"
+  },
+  {
+    "title": "Mobile App Design Fundamentals",
+    "description": "This course helps students get hands-on with Mobile App Design using industry-focused projects and real industry scenarios.",
+    "category": "Design"
+  },
+  {
+    "title": "The Complete Mobile App Design Course",
+    "description": "Build the core concepts of Mobile App Design step by step, with in-depth examples tailored for students.",
+    "category": "Design"
+  },
+  {
+    "title": "UI Design: From Zero to Job-Ready",
+    "description": "Understand the core concepts of UI Design step by step, with career-focused examples tailored for beginners.",
+    "category": "Design"
+  },
+  {
+    "title": "Advanced Branding and Identity Techniques",
+    "description": "A career-focused course that teaches you Branding and Identity, with a focus on the skills career switchers need to succeed.",
+    "category": "Design"
+  },
+  {
+    "title": "Introduction to Site Reliability Engineering",
+    "description": "Learn Site Reliability Engineering from the ground up in this career-focused course built for career switchers.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Docker: From Zero to Job-Ready",
+    "description": "Explore Docker through in-depth lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Monitoring and Observability Fundamentals",
+    "description": "Build the core concepts of Monitoring and Observability step by step, with practical examples tailored for self-taught learners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Introduction to Azure Fundamentals",
+    "description": "Everything experienced practitioners need to know about Azure Fundamentals, taught through practical, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Container Orchestration Fundamentals",
+    "description": "A up-to-date course that teaches you Container Orchestration, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Terraform Techniques",
+    "description": "Understand Terraform through in-depth lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical Infrastructure as Code Bootcamp",
+    "description": "Explore Infrastructure as Code from the ground up in this practical course built for working professionals.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering Azure Fundamentals",
+    "description": "This course helps experienced practitioners get hands-on with Azure Fundamentals using up-to-date projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "AWS: From Zero to Job-Ready",
+    "description": "Build the core concepts of AWS step by step, with up-to-date examples tailored for students.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Site Reliability Engineering Techniques",
+    "description": "Create Site Reliability Engineering through career-focused lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Site Reliability Engineering Crash Course",
+    "description": "Everything career switchers need to know about Site Reliability Engineering, taught through step-by-step, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "GitHub Actions: From Zero to Job-Ready",
+    "description": "Understand GitHub Actions from the ground up in this hands-on course built for career switchers.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Terraform for experienced practitioners",
+    "description": "Master Terraform through hands-on lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Hands-on Terraform Bootcamp",
+    "description": "Everything small business owners need to know about Terraform, taught through hands-on, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical Kubernetes for experienced practitioners",
+    "description": "This course helps experienced practitioners get hands-on with Kubernetes using step-by-step projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering Monitoring and Observability",
+    "description": "This course helps aspiring developers get hands-on with Monitoring and Observability using industry-focused projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Monitoring and Observability Techniques",
+    "description": "A in-depth course that teaches you Monitoring and Observability, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Infrastructure as Code Techniques",
+    "description": "Explore Infrastructure as Code through beginner-friendly lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering AWS",
+    "description": "This course helps experienced practitioners get hands-on with AWS using in-depth projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Docker for career switchers",
+    "description": "Build the core concepts of Docker step by step, with career-focused examples tailored for career switchers.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering CI/CD Pipelines",
+    "description": "Everything aspiring developers need to know about CI/CD Pipelines, taught through career-focused, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Introduction to CI/CD Pipelines",
+    "description": "Everything career switchers need to know about CI/CD Pipelines, taught through beginner-friendly, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical AWS for students",
+    "description": "Master the core concepts of AWS step by step, with practical examples tailored for students.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Google Cloud Platform for aspiring developers",
+    "description": "A hands-on course that teaches you Google Cloud Platform, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced AWS Techniques",
+    "description": "Develop AWS through beginner-friendly lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "The Complete Kubernetes Course",
+    "description": "Everything students need to know about Kubernetes, taught through comprehensive, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Docker Techniques",
+    "description": "Everything working professionals need to know about Docker, taught through step-by-step, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Step-by-step Monitoring and Observability Bootcamp",
+    "description": "Everything working professionals need to know about Monitoring and Observability, taught through step-by-step, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "AWS for students",
+    "description": "Understand AWS through step-by-step lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering Infrastructure as Code",
+    "description": "This course helps experienced practitioners get hands-on with Infrastructure as Code using industry-focused projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Azure Fundamentals Techniques",
+    "description": "Everything small business owners need to know about Azure Fundamentals, taught through hands-on, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Kubernetes Crash Course",
+    "description": "Learn Kubernetes from the ground up in this practical course built for working professionals.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical Monitoring and Observability for self-taught learners",
+    "description": "Develop the core concepts of Monitoring and Observability step by step, with industry-focused examples tailored for self-taught learners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Industry-focused Serverless Computing Bootcamp",
+    "description": "This course helps career switchers get hands-on with Serverless Computing using industry-focused projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering GitHub Actions",
+    "description": "Create the core concepts of GitHub Actions step by step, with industry-focused examples tailored for small business owners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Introduction to Cloud Architecture",
+    "description": "Learn Cloud Architecture from the ground up in this in-depth course built for self-taught learners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering Container Orchestration",
+    "description": "Build Container Orchestration through hands-on lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical Linux System Administration for beginners",
+    "description": "Develop the core concepts of Linux System Administration step by step, with career-focused examples tailored for beginners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "The Complete Site Reliability Engineering Course",
+    "description": "Learn Site Reliability Engineering from the ground up in this industry-focused course built for working professionals.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical CI/CD Pipelines for working professionals",
+    "description": "Explore the core concepts of CI/CD Pipelines step by step, with project-based examples tailored for working professionals.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "The Complete Docker Course",
+    "description": "Everything students need to know about Docker, taught through career-focused, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Google Cloud Platform Fundamentals",
+    "description": "Understand Google Cloud Platform through career-focused lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Kubernetes Techniques",
+    "description": "Learn Kubernetes through in-depth lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical Docker for aspiring developers",
+    "description": "A comprehensive course that teaches you Docker, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "GitHub Actions Crash Course",
+    "description": "Everything students need to know about GitHub Actions, taught through project-based, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Docker Crash Course",
+    "description": "Master Docker through practical lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Industry-focused Infrastructure as Code Bootcamp",
+    "description": "Everything small business owners need to know about Infrastructure as Code, taught through industry-focused, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Docker Fundamentals",
+    "description": "Build Docker from the ground up in this industry-focused course built for self-taught learners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Site Reliability Engineering Fundamentals",
+    "description": "Understand Site Reliability Engineering through up-to-date lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "CI/CD Pipelines for experienced practitioners",
+    "description": "A career-focused course that teaches you CI/CD Pipelines, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Terraform Fundamentals",
+    "description": "Explore the core concepts of Terraform step by step, with practical examples tailored for career switchers.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "The Complete GitHub Actions Course",
+    "description": "A comprehensive course that teaches you GitHub Actions, with a focus on the skills working professionals need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Up-to-date Kubernetes Bootcamp",
+    "description": "Everything experienced practitioners need to know about Kubernetes, taught through up-to-date, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Linux System Administration for self-taught learners",
+    "description": "This course helps self-taught learners get hands-on with Linux System Administration using hands-on projects and real industry scenarios.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "The Complete Monitoring and Observability Course",
+    "description": "Create the core concepts of Monitoring and Observability step by step, with career-focused examples tailored for experienced practitioners.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Introduction to Docker",
+    "description": "Everything experienced practitioners need to know about Docker, taught through comprehensive, project-based lessons.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Practical CI/CD Pipelines for experienced practitioners",
+    "description": "Create CI/CD Pipelines through career-focused lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Advanced Cloud Architecture Techniques",
+    "description": "A project-based course that teaches you Cloud Architecture, with a focus on the skills students need to succeed.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Up-to-date Docker Bootcamp",
+    "description": "Develop the core concepts of Docker step by step, with up-to-date examples tailored for working professionals.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Introduction to GitHub Actions",
+    "description": "Build the core concepts of GitHub Actions step by step, with beginner-friendly examples tailored for aspiring developers.",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "title": "Mastering Meta Ads",
+    "description": "A career-focused course that teaches you Meta Ads, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Marketing Automation Crash Course",
+    "description": "Everything small business owners need to know about Marketing Automation, taught through step-by-step, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Brand Strategy: From Zero to Job-Ready",
+    "description": "Master Brand Strategy through project-based lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Brand Strategy Fundamentals",
+    "description": "Everything small business owners need to know about Brand Strategy, taught through in-depth, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "SEO Fundamentals",
+    "description": "This course helps self-taught learners get hands-on with SEO using up-to-date projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Content Marketing for working professionals",
+    "description": "This course helps working professionals get hands-on with Content Marketing using career-focused projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Brand Strategy Crash Course",
+    "description": "Explore Brand Strategy from the ground up in this step-by-step course built for beginners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Meta Ads for self-taught learners",
+    "description": "A career-focused course that teaches you Meta Ads, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced SEO Techniques",
+    "description": "Explore SEO from the ground up in this hands-on course built for small business owners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Content Marketing: From Zero to Job-Ready",
+    "description": "This course helps aspiring developers get hands-on with Content Marketing using comprehensive projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Growth Marketing Fundamentals",
+    "description": "This course helps aspiring developers get hands-on with Growth Marketing using project-based projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced Marketing Analytics Techniques",
+    "description": "Build Marketing Analytics through career-focused lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Social Media Strategy Course",
+    "description": "Understand the core concepts of Social Media Strategy step by step, with up-to-date examples tailored for working professionals.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Email Marketing Crash Course",
+    "description": "Build Email Marketing from the ground up in this project-based course built for aspiring developers.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Google Ads Course",
+    "description": "A in-depth course that teaches you Google Ads, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Copywriting Course",
+    "description": "Develop Copywriting from the ground up in this in-depth course built for working professionals.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Marketing Automation for self-taught learners",
+    "description": "Understand Marketing Automation through practical lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Conversion Rate Optimization for experienced practitioners",
+    "description": "Learn the core concepts of Conversion Rate Optimization step by step, with up-to-date examples tailored for experienced practitioners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Email Marketing: From Zero to Job-Ready",
+    "description": "A beginner-friendly course that teaches you Email Marketing, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Meta Ads Fundamentals",
+    "description": "Build Meta Ads through practical lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Growth Marketing Crash Course",
+    "description": "A project-based course that teaches you Growth Marketing, with a focus on the skills beginners need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Introduction to Copywriting",
+    "description": "Master Copywriting from the ground up in this practical course built for experienced practitioners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Marketing Automation Course",
+    "description": "Build the core concepts of Marketing Automation step by step, with step-by-step examples tailored for aspiring developers.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Conversion Rate Optimization Fundamentals",
+    "description": "Develop Conversion Rate Optimization from the ground up in this step-by-step course built for career switchers.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Beginner-friendly Marketing Automation Bootcamp",
+    "description": "Develop the core concepts of Marketing Automation step by step, with beginner-friendly examples tailored for small business owners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Brand Strategy Course",
+    "description": "Everything small business owners need to know about Brand Strategy, taught through in-depth, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Growth Marketing Bootcamp",
+    "description": "Everything experienced practitioners need to know about Growth Marketing, taught through practical, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Google Ads: From Zero to Job-Ready",
+    "description": "Understand the core concepts of Google Ads step by step, with comprehensive examples tailored for students.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Growth Marketing",
+    "description": "Explore the core concepts of Growth Marketing step by step, with up-to-date examples tailored for working professionals.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Content Marketing for aspiring developers",
+    "description": "A in-depth course that teaches you Content Marketing, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Affiliate Marketing: From Zero to Job-Ready",
+    "description": "Master the core concepts of Affiliate Marketing step by step, with hands-on examples tailored for experienced practitioners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical SEO for experienced practitioners",
+    "description": "Create the core concepts of SEO step by step, with comprehensive examples tailored for experienced practitioners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Hands-on Meta Ads Bootcamp",
+    "description": "Learn Meta Ads through hands-on lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Introduction to Social Media Strategy",
+    "description": "A project-based course that teaches you Social Media Strategy, with a focus on the skills working professionals need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Introduction to SEO",
+    "description": "Understand SEO from the ground up in this step-by-step course built for students.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Brand Strategy",
+    "description": "Build Brand Strategy through career-focused lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Marketing Analytics: From Zero to Job-Ready",
+    "description": "Everything small business owners need to know about Marketing Analytics, taught through hands-on, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Up-to-date Growth Marketing Bootcamp",
+    "description": "Develop Growth Marketing from the ground up in this up-to-date course built for beginners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Google Ads Crash Course",
+    "description": "Build the core concepts of Google Ads step by step, with industry-focused examples tailored for students.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Growth Marketing for self-taught learners",
+    "description": "Everything self-taught learners need to know about Growth Marketing, taught through hands-on, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Marketing Automation: From Zero to Job-Ready",
+    "description": "Explore Marketing Automation through industry-focused lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Social Media Strategy",
+    "description": "Everything working professionals need to know about Social Media Strategy, taught through project-based, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced Influencer Marketing Techniques",
+    "description": "Everything self-taught learners need to know about Influencer Marketing, taught through practical, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Social Media Strategy: From Zero to Job-Ready",
+    "description": "Understand Social Media Strategy from the ground up in this step-by-step course built for aspiring developers.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Beginner-friendly SEO Bootcamp",
+    "description": "Build SEO through beginner-friendly lessons designed for students, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Social Media Strategy for students",
+    "description": "This course helps students get hands-on with Social Media Strategy using up-to-date projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced Email Marketing Techniques",
+    "description": "Learn Email Marketing through beginner-friendly lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced Affiliate Marketing Techniques",
+    "description": "This course helps self-taught learners get hands-on with Affiliate Marketing using in-depth projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Introduction to Marketing Analytics",
+    "description": "This course helps small business owners get hands-on with Marketing Analytics using industry-focused projects and real industry scenarios.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Influencer Marketing for small business owners",
+    "description": "Explore the core concepts of Influencer Marketing step by step, with project-based examples tailored for small business owners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Advanced Copywriting Techniques",
+    "description": "Learn Copywriting through up-to-date lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Copywriting: From Zero to Job-Ready",
+    "description": "Understand the core concepts of Copywriting step by step, with practical examples tailored for experienced practitioners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Email Marketing Course",
+    "description": "Understand the core concepts of Email Marketing step by step, with hands-on examples tailored for beginners.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Conversion Rate Optimization",
+    "description": "A comprehensive course that teaches you Conversion Rate Optimization, with a focus on the skills small business owners need to succeed.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Practical Brand Strategy for working professionals",
+    "description": "Master the core concepts of Brand Strategy step by step, with career-focused examples tailored for working professionals.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Marketing Analytics",
+    "description": "Master Marketing Analytics through in-depth lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "The Complete Influencer Marketing Course",
+    "description": "Everything aspiring developers need to know about Influencer Marketing, taught through step-by-step, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Mastering Content Marketing",
+    "description": "Everything self-taught learners need to know about Content Marketing, taught through project-based, project-based lessons.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Introduction to Growth Marketing",
+    "description": "Explore Growth Marketing from the ground up in this in-depth course built for students.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Project-based Influencer Marketing Bootcamp",
+    "description": "Develop Influencer Marketing through project-based lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Marketing"
+  },
+  {
+    "title": "Microservices: From Zero to Job-Ready",
+    "description": "Explore Microservices through beginner-friendly lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Caching Strategies for self-taught learners",
+    "description": "A step-by-step course that teaches you Caching Strategies, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "The Complete Load Balancing Course",
+    "description": "Learn Load Balancing from the ground up in this hands-on course built for working professionals.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "The Complete SQL Query Optimization Course",
+    "description": "Everything small business owners need to know about SQL Query Optimization, taught through up-to-date, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Mastering System Design",
+    "description": "This course helps aspiring developers get hands-on with System Design using project-based projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Database Indexing and Optimization for self-taught learners",
+    "description": "Explore Database Indexing and Optimization from the ground up in this practical course built for self-taught learners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Load Balancing for aspiring developers",
+    "description": "Create Load Balancing through practical lessons designed for aspiring developers, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "gRPC Fundamentals",
+    "description": "A up-to-date course that teaches you gRPC, with a focus on the skills working professionals need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical API Design for self-taught learners",
+    "description": "Learn the core concepts of API Design step by step, with beginner-friendly examples tailored for self-taught learners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical gRPC for working professionals",
+    "description": "Master the core concepts of gRPC step by step, with in-depth examples tailored for working professionals.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Mastering API Design",
+    "description": "Everything students need to know about API Design, taught through career-focused, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Introduction to Event-Driven Architecture",
+    "description": "A career-focused course that teaches you Event-Driven Architecture, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Event-Driven Architecture for self-taught learners",
+    "description": "Build Event-Driven Architecture through career-focused lessons designed for self-taught learners, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Design Crash Course",
+    "description": "This course helps students get hands-on with Database Design using beginner-friendly projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Load Balancing for beginners",
+    "description": "Understand the core concepts of Load Balancing step by step, with step-by-step examples tailored for beginners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "The Complete Event-Driven Architecture Course",
+    "description": "Master the core concepts of Event-Driven Architecture step by step, with step-by-step examples tailored for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Indexing and Optimization: From Zero to Job-Ready",
+    "description": "This course helps working professionals get hands-on with Database Indexing and Optimization using comprehensive projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Indexing and Optimization Crash Course",
+    "description": "A beginner-friendly course that teaches you Database Indexing and Optimization, with a focus on the skills small business owners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Introduction to Caching Strategies",
+    "description": "Create the core concepts of Caching Strategies step by step, with project-based examples tailored for self-taught learners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Authentication and Authorization: From Zero to Job-Ready",
+    "description": "Master Authentication and Authorization through project-based lessons designed for working professionals, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Mastering Distributed Systems",
+    "description": "Master Distributed Systems through beginner-friendly lessons designed for small business owners, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Career-focused Distributed Systems Bootcamp",
+    "description": "A career-focused course that teaches you Distributed Systems, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced gRPC Techniques",
+    "description": "A career-focused course that teaches you gRPC, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Scalable Backend Architecture: From Zero to Job-Ready",
+    "description": "This course helps aspiring developers get hands-on with Scalable Backend Architecture using step-by-step projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "The Complete Distributed Systems Course",
+    "description": "Everything small business owners need to know about Distributed Systems, taught through comprehensive, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced Database Indexing and Optimization Techniques",
+    "description": "Develop Database Indexing and Optimization through beginner-friendly lessons designed for career switchers, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Design: From Zero to Job-Ready",
+    "description": "Develop the core concepts of Database Design step by step, with step-by-step examples tailored for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Introduction to Authentication and Authorization",
+    "description": "Create the core concepts of Authentication and Authorization step by step, with hands-on examples tailored for beginners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "SQL Query Optimization for self-taught learners",
+    "description": "This course helps self-taught learners get hands-on with SQL Query Optimization using industry-focused projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Design Fundamentals",
+    "description": "Develop Database Design through project-based lessons designed for career switchers, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Message Queues Crash Course",
+    "description": "Learn Message Queues from the ground up in this up-to-date course built for small business owners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Microservices for experienced practitioners",
+    "description": "Build Microservices through up-to-date lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "API Design: From Zero to Job-Ready",
+    "description": "A step-by-step course that teaches you API Design, with a focus on the skills self-taught learners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced Load Balancing Techniques",
+    "description": "A project-based course that teaches you Load Balancing, with a focus on the skills aspiring developers need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Message Queues for students",
+    "description": "Everything students need to know about Message Queues, taught through career-focused, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Mastering gRPC",
+    "description": "This course helps beginners get hands-on with gRPC using project-based projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Load Balancing: From Zero to Job-Ready",
+    "description": "Develop the core concepts of Load Balancing step by step, with comprehensive examples tailored for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Event-Driven Architecture: From Zero to Job-Ready",
+    "description": "A comprehensive course that teaches you Event-Driven Architecture, with a focus on the skills career switchers need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Authentication and Authorization Bootcamp",
+    "description": "Explore Authentication and Authorization through practical lessons designed for experienced practitioners, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Caching Strategies Bootcamp",
+    "description": "This course helps experienced practitioners get hands-on with Caching Strategies using practical projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Authentication and Authorization Fundamentals",
+    "description": "Everything self-taught learners need to know about Authentication and Authorization, taught through up-to-date, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Database Indexing and Optimization for career switchers",
+    "description": "Learn the core concepts of Database Indexing and Optimization step by step, with beginner-friendly examples tailored for career switchers.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "In-depth Microservices Bootcamp",
+    "description": "Understand Microservices from the ground up in this in-depth course built for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced SQL Query Optimization Techniques",
+    "description": "Everything small business owners need to know about SQL Query Optimization, taught through project-based, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Scalable Backend Architecture Crash Course",
+    "description": "Build Scalable Backend Architecture from the ground up in this in-depth course built for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced Authentication and Authorization Techniques",
+    "description": "A industry-focused course that teaches you Authentication and Authorization, with a focus on the skills experienced practitioners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Caching Strategies: From Zero to Job-Ready",
+    "description": "A in-depth course that teaches you Caching Strategies, with a focus on the skills small business owners need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Microservices Fundamentals",
+    "description": "A up-to-date course that teaches you Microservices, with a focus on the skills students need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical System Design for career switchers",
+    "description": "A beginner-friendly course that teaches you System Design, with a focus on the skills career switchers need to succeed.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Database Indexing and Optimization Fundamentals",
+    "description": "Learn Database Indexing and Optimization from the ground up in this in-depth course built for career switchers.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Database Design for working professionals",
+    "description": "Master Database Design from the ground up in this career-focused course built for working professionals.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Introduction to SQL Query Optimization",
+    "description": "Create SQL Query Optimization through practical lessons designed for beginners, covering real-world projects and practical exercises.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical System Design for self-taught learners",
+    "description": "Everything self-taught learners need to know about System Design, taught through in-depth, project-based lessons.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Advanced Event-Driven Architecture Techniques",
+    "description": "Build the core concepts of Event-Driven Architecture step by step, with practical examples tailored for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Message Queues: From Zero to Job-Ready",
+    "description": "Master the core concepts of Message Queues step by step, with practical examples tailored for working professionals.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Mastering SQL Query Optimization",
+    "description": "This course helps career switchers get hands-on with SQL Query Optimization using comprehensive projects and real industry scenarios.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Practical Distributed Systems for aspiring developers",
+    "description": "Understand Distributed Systems from the ground up in this industry-focused course built for aspiring developers.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Scalable Backend Architecture Fundamentals",
+    "description": "Understand the core concepts of Scalable Backend Architecture step by step, with hands-on examples tailored for students.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "The Complete API Design Course",
+    "description": "Learn API Design from the ground up in this career-focused course built for small business owners.",
+    "category": "Backend & Systems"
+  },
+  {
+    "title": "Up-to-date Authentication and Authorization Bootcamp",
+    "description": "A up-to-date course that teaches you Authentication and Authorization, with a focus on the skills small business owners need to succeed.",
+    "category": "Backend & Systems"
+  }
+]

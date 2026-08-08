@@ -16,3 +16,5 @@ models/
 
 # Postgres data, if ever run outside Docker's named volume
 pgdata/
+
+artifacts/

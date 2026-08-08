@@ -28,6 +28,7 @@ class Settings(BaseSettings):
     POSTGRES_PORT: int
     DATABASE_URL: str
 
+    EMBEDDING_MODEL_PATH: str
     # --- Database (used starting Phase 1) ---
     #database_url: str = "postgresql+psycopg://{eduplatform}:change-this-password@localhost:5432/eduplatform"
 

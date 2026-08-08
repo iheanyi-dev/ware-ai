@@ -22,14 +22,22 @@ from app.models import User
 from app.schemas.recommendation import RecommendationResponse
 from app.services.recommendation_service import get_recommendations_for_user
 
-router = APIRouter(prefix="/users", tags=["recommendations"])
+# app/api/routes/recommendations.py — update the router declaration
 
+from app.core.security import verify_internal_api_key
+
+router = APIRouter(
+    prefix="/users",
+    tags=["recommendations"],
+    #dependencies=[Depends(verify_internal_api_key)],  # applies to every route in this router
+)
 
 @router.get("/{user_id}/recommendations", response_model=RecommendationResponse)
 async def get_user_recommendations(
     user_id: uuid.UUID,
     limit: int = Query(default=10, ge=1, le=50),
     db: AsyncSession = Depends(get_db),
+
 ) -> RecommendationResponse:
     """
     Returns up to `limit` recommended courses for a user, combining

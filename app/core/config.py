@@ -37,7 +37,7 @@ class Settings(BaseSettings):
     anthropic_model: str = "claude-sonnet-4-6"
 
     # --- Internal service-to-service auth (used starting Phase 4) ---
-    internal_api_key: str = ""
+    INTERNAL_API_KEY: str = ""
 
     @property
     def database_url(self):

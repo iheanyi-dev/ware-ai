@@ -17,7 +17,8 @@ dependencies = [
     "asyncpg>=0.31.0",
     "alembic>=1.13.3",        # database migrations (versioned schema changes)
     "pgvector>=0.3.5",        # Python-side support for the Postgres `vector` column type
-    "sentence_transformers"
+    "sentence_transformers",
+    "anthropic>=0.121.0",
 ]
 
 # Dev-only dependencies — not needed to run the app, only to test it.

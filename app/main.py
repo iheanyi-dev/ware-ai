@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from app.core.config import get_settings
 
 from app.api.routes.recommendations import router as recommendations_router
-
+from app.api.routes.chat import router as chat_router
 # Settings are loaded once at module import time — cached by get_settings(),
 # so this doesn't re-read .env on every request.
 settings = get_settings()
@@ -14,7 +14,11 @@ app = FastAPI(
     version="0.1.0",
 )
 # app/main.py — add these two lines alongside your existing router includes
+# app/main.py — add alongside your existing router includes
 
+
+
+app.include_router(chat_router)
 
 
 app.include_router(recommendations_router)

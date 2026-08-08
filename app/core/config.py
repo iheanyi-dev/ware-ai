@@ -33,8 +33,11 @@ class Settings(BaseSettings):
     #database_url: str = "postgresql+psycopg://{eduplatform}:change-this-password@localhost:5432/eduplatform"
 
     # --- Anthropic API (used starting Phase 5) ---
-    anthropic_api_key: str = ""
-    anthropic_model: str = "claude-sonnet-4-6"
+    ANTHROPIC_API_KEY: str = ""
+    # app/core/config.py — add alongside anthropic_api_key / anthropic_model
+
+    ANTHROPIC_MODEL: str = "claude-sonnet-4-6"          # main chatbot replies
+    ANTHROPIC_SUMMARY_MODEL: str = "claude-haiku-4-5-20251001"  # cheap/fast, used only for history summarization
 
     # --- Internal service-to-service auth (used starting Phase 4) ---
     INTERNAL_API_KEY: str = ""

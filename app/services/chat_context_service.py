@@ -22,6 +22,9 @@ from sqlalchemy.orm import selectinload
 from app.models import Course
 from app.services.embedding_service import embed_text
 
+
+from app.models.faq_chunk import FaqChunk
+
 # How many courses to pull into context per chat turn. Kept small — this
 # text goes straight into the prompt on every message, so a larger number
 # increases both cost and the chance of Claude citing something only
@@ -29,6 +32,26 @@ from app.services.embedding_service import embed_text
 # well without bloating the prompt.
 CONTEXT_COURSES_LIMIT = 5
 
+
+async def get_relevant_faq_chunks(query: str, db: AsyncSession, top_k: int = 5) -> list[FaqChunk]:
+    """Same retrieval pattern as course content matching — cosine_distance
+    search against FaqChunk.embedding instead of Course.embedding."""
+    query_embedding = embed_text(query)
+    result = await db.execute(
+        select(FaqChunk)
+        .order_by(FaqChunk.embedding.cosine_distance(query_embedding))
+        .limit(top_k)
+    )
+    courses = list(result.scalars().all())
+    lines = []
+    for course in courses:
+        lines.append(
+            f"- \"{course.title}\ "
+            f" {course.content}\n"
+            f" {course.source_url}"
+        )
+    
+    return "\n".join(lines)
 
 async def retrieve_relevant_courses(db: AsyncSession, user_message: str) -> list[Course]:
     """

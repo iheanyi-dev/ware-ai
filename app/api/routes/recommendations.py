@@ -7,11 +7,11 @@ app/services/recommendation_service.py.
 
 """
 
-import uuid
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Dict
 
 from app.db.session import get_db
 from app.models import User
@@ -19,6 +19,10 @@ from app.schemas.recommendation import RecommendationResponse
 from app.services.recommendation_service import get_recommendations_for_user, get_recommendations_by_text
 
 from app.core.security import verify_internal_api_key
+from pydantic import BaseModel
+
+class Rec(BaseModel):
+    message: str
 
 router = APIRouter(
     prefix="/users",
@@ -28,7 +32,7 @@ router = APIRouter(
 
 @router.get("/{user_id}/recommendations", response_model=RecommendationResponse)
 async def get_user_recommendations(
-    user_id: uuid.UUID,
+    user_id: int,
     limit: int = Query(default=10, ge=1, le=50),
     db: AsyncSession = Depends(get_db),
 
@@ -53,16 +57,16 @@ async def get_user_recommendations(
 
 @router.post("/recommendations", response_model= RecommendationResponse)
 async def get_recommendations(
-    request,
+    req: Rec,
     limit: int = Query(default=10, ge=1, le=50),
     db: AsyncSession = Depends(get_db),
-
 ):
     """
     Returns up to `limit` recommended courses 
 
     """
-    text = request.text
+    
+    text = req.message
 
     recommendations = await get_recommendations_by_text(db, text, limit=limit)
 

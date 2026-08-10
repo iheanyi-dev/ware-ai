@@ -38,7 +38,7 @@ class Settings(BaseSettings):
 
     ANTHROPIC_MODEL: str = "claude-sonnet-4-6"          # main chatbot replies
     ANTHROPIC_SUMMARY_MODEL: str = "claude-haiku-4-5-20251001"  # cheap/fast, used only for history summarization
-
+    GEMINI_API_KEY: str=""
     # --- Internal service-to-service auth (used starting Phase 4) ---
     INTERNAL_API_KEY: str = ""
 

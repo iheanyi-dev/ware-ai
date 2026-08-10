@@ -17,8 +17,6 @@ Both exclude courses the user is already enrolled in. Used by the
 recommendations API endpoint (next step).
 """
 
-import uuid
-
 import numpy as np
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -45,9 +43,10 @@ def map_course_recommended_text(course: Course) -> RecommendedCourse:
             rating=float(course.rating) if course.rating is not None else None,
             instructor_id=course.instructor_id,
             instructor_name=course.instructor.name,
+            reason='similar_content'
         )
 
-async def _get_enrolled_course_ids(db: AsyncSession, user_id: uuid.UUID) -> set[uuid.UUID]:
+async def _get_enrolled_course_ids(db: AsyncSession, user_id: int) -> set[int]:
     """Shared by both recommendation functions below — every recommendation
     query needs to know what to exclude."""
     result = await db.execute(
@@ -57,7 +56,7 @@ async def _get_enrolled_course_ids(db: AsyncSession, user_id: uuid.UUID) -> set[
 
 
 async def get_instructor_based_candidates(
-    db: AsyncSession, user_id: uuid.UUID, enrolled_course_ids: set[uuid.UUID]
+    db: AsyncSession, user_id: int, enrolled_course_ids: set[int]
 ) -> list[Course]:
     """
     Other courses by instructors this user has already enrolled with,
@@ -91,7 +90,7 @@ async def get_instructor_based_candidates(
 
 
 async def get_content_based_candidates(
-    db: AsyncSession, user_id: uuid.UUID, enrolled_course_ids: set[uuid.UUID]
+    db: AsyncSession, user_id: int, enrolled_course_ids: set[int]
 ) -> list[Course]:
     """
     Courses most similar (cosine distance) to the AVERAGE embedding of the
@@ -164,9 +163,9 @@ def _merge_and_rank(
     open decision) — revisit if one signal turns out to produce much
     weaker matches than the other in practice.
     """
-    scores: dict[uuid.UUID, float] = {}
-    reasons: dict[uuid.UUID, set[str]] = {}
-    course_lookup: dict[uuid.UUID, Course] = {}
+    scores: dict[int, float] = {}
+    reasons: dict[int, set[str]] = {}
+    course_lookup: dict[int, Course] = {}
 
     for idx, course in enumerate(instructor_candidates):
         # Linearly decaying score: 1.0 for 1st place, down toward 0 by the
@@ -212,7 +211,7 @@ def _merge_and_rank(
 
 
 async def get_recommendations_for_user(
-    db: AsyncSession, user_id: uuid.UUID, limit: int = 10
+    db: AsyncSession, user_id: int, limit: int = 10
 ) -> list[RecommendedCourse]:
     """
     Main entry point — call this from the API endpoint. Runs both signal
@@ -234,6 +233,7 @@ async def get_recommendations_by_text(
     embedding = embed_text(text)
     stmt = (
         select(Course)
+        .options(selectinload(Course.instructor))
         .where(Course.embedding.is_not(None))
         .order_by(Course.embedding.cosine_distance(embedding))
         .limit(limit)

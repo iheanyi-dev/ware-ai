@@ -1,0 +1,61 @@
+# --- Version control ---
+.git
+.gitignore
+
+# --- Environment / secrets ---
+# .env files hold DB URLs, API keys, etc. — must never be baked into an
+# image layer, since image layers are cacheable/inspectable/shareable.
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+.venv
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- uv ---
+# uv.lock and pyproject.toml ARE needed (see Dockerfile COPY step) —
+# only the local cache is excluded here.
+.uv-cache/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Docs / local-only files ---
+README.md
+*.md
+docs/
+
+# --- Tests (skip if you want them in CI-built images instead) ---
+tests/
+
+# --- Alembic local artifacts ---
+# Keep the alembic/ directory itself (needed to run migrations), just drop
+# any local sqlite/db files that might be sitting around from dev.
+*.db
+*.sqlite3
+
+# --- Docker itself ---
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+data/
+
+notebook/
+
+scripts/
+
+alembic/

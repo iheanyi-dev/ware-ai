@@ -1,14 +1,13 @@
 # app/models/course.py
-import uuid
 from datetime import datetime
+import uuid
 
 from pgvector.sqlalchemy import Vector
-from sqlalchemy import DateTime, ForeignKey, Numeric, String, Text, func
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import DateTime, ForeignKey, Numeric, String, Text, func, Integer
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
-from app.models import Instructor
+#from app.models import Instructor
 
 # Output dimension of all-MiniLM-L6-v2 (and our fine-tuned version of it —
 # fine-tuning changes weights, not the output size). If we ever swap base
@@ -25,8 +24,8 @@ class Course(Base):
 
     __tablename__ = "courses"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    id: Mapped[int] = mapped_column(Integer,
+        primary_key=True
     )
 
     title: Mapped[str] = mapped_column(String(255), nullable=False)
@@ -59,8 +58,8 @@ class Course(Base):
     embedding: Mapped[list[float] | None] = mapped_column(Vector(EMBEDDING_DIM), nullable=True)
 
     # The "many" side of the relationship holds the foreign key.
-    instructor_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("instructors.id"), nullable=False, index=True
+    instructor_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("instructors.id"), nullable=False, index=True
     )
 
     created_at: Mapped[datetime] = mapped_column(
@@ -69,7 +68,7 @@ class Course(Base):
 
     # Gives us course.instructor to access the full Instructor object,
     # not just its id — the other half of Instructor.courses.
-    instructor: Mapped[Instructor] = relationship(back_populates="courses")
+    instructor: Mapped["Instructor"] = relationship(back_populates="courses")
 
     def __repr__(self) -> str:
-        return f"<Course id={self.id} title={self.title!r}>"
+        return

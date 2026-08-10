@@ -1,12 +1,11 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, UniqueConstraint, func
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import DateTime, ForeignKey, UniqueConstraint, func, Integer
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
-from app.models import Course, User
+#from app.models import Course, User
 
 class Enrollment(Base):
     """
@@ -23,16 +22,16 @@ class Enrollment(Base):
         UniqueConstraint("user_id", "course_id", name="uq_user_course_enrollment"),
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    id: Mapped[int] = mapped_column(
+        Integer, primary_key=True, autoincrement=True
     )
 
-    user_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id"), nullable=False, index=True
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id"), nullable=False, index=True
     )
 
-    course_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("courses.id"), nullable=False, index=True
+    course_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("courses.id"), nullable=False, index=True
     )
 
     enrolled_at: Mapped[datetime] = mapped_column(
@@ -45,8 +44,8 @@ class Enrollment(Base):
     # back_populates is more explicit and is what we used for
     # Instructor <-> Course; backref is the more convenient shorthand for
     # this join-table case where we don't need anything else on those models.
-    course: Mapped[Course] = relationship(backref="enrollments")
-    user: Mapped[User] = relationship(backref="enrollments")
+    course: Mapped["Course"] = relationship(backref="enrollments")
+    user: Mapped["User"] = relationship(backref="enrollments")
 
     def __repr__(self) -> str:
         return f"<Enrollment user_id={self.user_id} course_id={self.course_id}>"

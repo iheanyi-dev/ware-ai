@@ -15,7 +15,7 @@ rather than re-summarizing the whole conversation from scratch every time.
 """
 
 from app.models import ChatConversation, ChatMessage
-from app.services.anthropic_client import get_chat_completion
+from app.services.gemini_client import get_chat_completion
 from app.core.config import get_settings
 
 SUMMARIZATION_SYSTEM_PROMPT = """\

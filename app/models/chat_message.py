@@ -1,9 +1,7 @@
 # app/models/chat_message.py
-import uuid
 from datetime import datetime
 
-from sqlalchemy import CheckConstraint, DateTime, ForeignKey, String, Text, func
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import CheckConstraint, DateTime, ForeignKey, String, Text, func, Integer
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.base import Base
@@ -23,12 +21,12 @@ class ChatMessage(Base):
         CheckConstraint("role IN ('user', 'assistant')", name="ck_chat_message_role"),
     )
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    id: Mapped[int] = mapped_column(
+        Integer, primary_key=True, autoincrement=True
     )
 
-    conversation_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("chat_conversations.id"), nullable=False, index=True
+    conversation_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("chat_conversations.id"), nullable=False, index=True
     )
 
     # Matches the Anthropic API's role values directly — no translation

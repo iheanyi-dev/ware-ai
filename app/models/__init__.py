@@ -10,5 +10,6 @@ from app.models.course import Course
 from app.models.enrollment import Enrollment
 from app.models.instructor import Instructor
 from app.models.user import User
+from app.models.faq_chunk import FaqChunk
 
-__all__ = ["Instructor", "Course", "Enrollment", "User", "ChatConversation", "ChatMessage" ]
+__all__ = ["FaqChunk", "Instructor", "Course", "Enrollment", "User", "ChatConversation", "ChatMessage" ]

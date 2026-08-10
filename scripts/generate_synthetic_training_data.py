@@ -84,6 +84,42 @@ CATEGORY_SUBTOPICS = {
         "Load Balancing", "Event-Driven Architecture", "SQL Query Optimization",
         "Scalable Backend Architecture", "gRPC",
     ],
+        "Basic Computer Learning": [
+        "Computer Fundamentals", "Keyboard and Mouse Skills",
+        "Windows Operating System", "File and Folder Management",
+        "Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint",
+        "Microsoft Access", "Internet Basics and Online Safety",
+        "Typing Practice and Computer Shortcuts", "Office Productivity Tools",
+    ],
+    "Data Analysis": [
+        "Advanced Excel Functions", "Statistical Analysis and Hypothesis Testing",
+        "Data Visualization", "Dashboard Creation", "Data Cleaning and Transformation",
+        "Python for Data Analysis", "R for Data Analysis", "SQL for Data Analysis",
+        "Power BI", "Tableau", "Business Reporting",
+    ],
+    "Mobile App Development": [
+        "Flutter", "React Native", "Android Development", "iOS Development",
+        "Mobile UI/UX Design", "Mobile App Testing and Debugging",
+        "App Store and Play Store Deployment", "Mobile Authentication and APIs",
+    ],
+    "Cyber Security": [
+        "Network Security", "Ethical Hacking", "Penetration Testing",
+        "Vulnerability Assessment", "Password Cracking and Phishing Defense",
+        "Web Application Security", "Security Consulting", "Firewalls",
+        "Digital Forensics",
+    ],
+    "Programming": [
+        "Python Programming", "Object-Oriented Programming",
+        "Data Structures and Algorithms", "Web Scraping and Automation",
+        "GUI Development", "Software Debugging", "Programming Fundamentals",
+        "File Handling and Exceptions",
+    ],
+    "Jamb": [
+        "JAMB Mathematics", "JAMB English Language", "JAMB Physics",
+        "JAMB Chemistry", "JAMB Biology", "JAMB Economics",
+        "JAMB Past Questions and Exam Practice", "JAMB Use of English",
+    ]
+
 }
 
 AUDIENCES = [

@@ -1,19 +1,21 @@
 # app/services/chatbot_service.py — full updated version
 
-import uuid
-
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models import ChatConversation, ChatMessage
-from app.services.anthropic_client import ChatMessage as AnthropicChatMessage
-from app.services.anthropic_client import get_chat_completion
+from app.services.gemini_client import get_chat_completion, get_chat_completion_stream
 from app.services.chat_context_service import format_courses_for_prompt, retrieve_relevant_courses
 from app.services.chat_summarization_service import summarize_new_messages
-from app.services.faq_knowledge_base import format_faq_for_prompt
+#from app.services.faq_knowledge_base import format_faq_for_prompt
+from app.services.chat_context_service import get_relevant_faq_chunks
+
+# Same ChatMessage shape used across all three client modules:
+# {"role": "user"|"assistant", "content": str}
+AnthropicChatMessage = dict[str, str]
 
 SYSTEM_PROMPT_TEMPLATE = """\
-You are a helpful assistant embedded in an online learning platform where \
+You are Wareford Assistant, a helpful assistant embedded in an online learning platform where \
 users browse, purchase, and take courses taught by instructors.
 
 Your job is to help users navigate the site and answer questions about \
@@ -30,7 +32,9 @@ user asked, ignore it rather than forcing it into your answer.
 history, account details), say so plainly and suggest they check their \
 account page or contact support — don't guess.
 - Keep answers concise and conversational. This is a chat interface, not \
-a documentation page.
+a documentation page
+- When you are not sure of an answer or the user asked a question not related to what you are given, simply tell the user to contact us on (+234) 8071885074, Email: contact@waresford.com, WHATSAPP: (+234) 8071885074
+.
 
 {summary_section}
 --- SITE FAQ ---
@@ -53,7 +57,7 @@ KEEP_RECENT_VERBATIM = 8
 
 
 async def _get_or_create_conversation(
-    db: AsyncSession, conversation_id: uuid.UUID | None, user_id: uuid.UUID | None
+    db: AsyncSession, conversation_id: int | None, user_id: int | None
 ) -> ChatConversation:
     if conversation_id is not None:
         result = await db.execute(
@@ -123,14 +127,20 @@ async def _get_history_for_prompt(
     return conversation.summary, anthropic_history
 
 
-async def get_chatbot_reply(
+async def _prepare_turn(
     db: AsyncSession,
     user_message: str,
-    conversation_id: uuid.UUID | None = None,
-    user_id: uuid.UUID | None = None,
-) -> tuple[str, uuid.UUID]:
+    conversation_id: int | None,
+    user_id: int | None,
+) -> tuple[ChatConversation, str, list[AnthropicChatMessage]]:
     """
-    Main entry point. Returns (assistant_reply, conversation_id).
+    Shared setup for a chat turn: resolve/create the conversation, build the
+    (possibly summarized) history, pull FAQ + course context, and assemble
+    the final system prompt and message list.
+
+    Used by both get_chatbot_reply() (non-streaming) and
+    stream_chatbot_reply() (streaming) so the two paths can't drift apart on
+    prompt construction — only what happens with the completion call differs.
     """
     conversation = await _get_or_create_conversation(db, conversation_id, user_id)
 
@@ -138,7 +148,7 @@ async def get_chatbot_reply(
 
     summary_section = f"--- CONVERSATION SO FAR (summarized) ---\n{summary}\n" if summary else ""
 
-    faq_content = format_faq_for_prompt()
+    faq_content = await get_relevant_faq_chunks(user_message, db)
     relevant_courses = await retrieve_relevant_courses(db, user_message)
     course_context = format_courses_for_prompt(relevant_courses)
 
@@ -153,10 +163,72 @@ async def get_chatbot_reply(
         {"role": "user", "content": user_message},
     ]
 
-    reply = get_chat_completion(system_prompt, messages)  # uses settings.anthropic_model by default
+    return conversation, system_prompt, messages
+
+
+async def get_chatbot_reply(
+    db: AsyncSession,
+    user_message: str,
+    conversation_id: int | None = None,
+    user_id: int | None = None,
+) -> tuple[str, int]:
+    """
+    Main entry point (non-streaming). Returns (assistant_reply, conversation_id).
+    """
+    conversation, system_prompt, messages = await _prepare_turn(
+        db, user_message, conversation_id, user_id
+    )
+
+    reply = await get_chat_completion(system_prompt, messages)  # uses settings.anthropic_model by default
 
     db.add(ChatMessage(conversation_id=conversation.id, role="user", content=user_message))
     db.add(ChatMessage(conversation_id=conversation.id, role="assistant", content=reply))
     await db.commit()
 
     return reply, conversation.id
+
+
+async def stream_chatbot_reply(
+    db: AsyncSession,
+    user_message: str,
+    conversation_id: int | None = None,
+    user_id: int | None = None,
+):
+    """
+    Streaming entry point. Async-generator, yields (new_conversation_id, chunk)
+    tuples where exactly one of the two is set per item:
+
+      - First item: (conversation.id, None) — sent once, immediately, before
+        any generated text, so the caller learns the conversation id right
+        away (needed for brand-new conversations, since it doesn't exist
+        until _prepare_turn() creates it).
+      - Every following item: (None, chunk) — a piece of generated text.
+
+    The full exchange (user message + assembled assistant reply) is saved to
+    the DB only after the stream is fully exhausted — same save shape as
+    get_chatbot_reply(), just deferred until generation completes rather
+    than happening before it starts.
+
+    Caveat: if the caller stops iterating early (e.g. client disconnects
+    mid-stream), this generator is abandoned before reaching the DB save,
+    so the partial reply is NOT persisted. If you want partial replies kept,
+    wrap the save in a try/finally instead — deliberately left out here
+    since a half-generated answer being saved as if it were complete has its
+    own downsides (a future turn would treat it as the full prior answer).
+    """
+    conversation, system_prompt, messages = await _prepare_turn(
+        db, user_message, conversation_id, user_id
+    )
+
+    yield conversation.id, None
+
+    full_reply_parts: list[str] = []
+    async for chunk in get_chat_completion_stream(system_prompt, messages):
+        full_reply_parts.append(chunk)
+        yield None, chunk
+
+    full_reply = "".join(full_reply_parts)
+
+    db.add(ChatMessage(conversation_id=conversation.id, role="user", content=user_message))
+    db.add(ChatMessage(conversation_id=conversation.id, role="assistant", content=full_reply))
+    await db.commit()

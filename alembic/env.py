@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from app.core.config import get_settings
 from app.db.base import Base
-from app.models import Course, Enrollment, Instructor, User, ChatConversation, ChatMessage  # noqa: F401  (import registers them on Base.metadata)
+from app.models import Course, Enrollment, Instructor, User, ChatConversation, ChatMessage, FaqChunk # noqa: F401  (import registers them on Base.metadata)
 
 from alembic import context
 

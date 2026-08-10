@@ -25,7 +25,7 @@ from sqlalchemy import delete
 from scripts.seed_data import COURSES, ENROLLMENTS, INSTRUCTORS, USERS
 from app.db.session import AsyncSessionLocal
 from app.models import Course, Enrollment, Instructor, User
-
+from app.services.embedding_service import embed_text
 
 async def seed() -> None:
     async with AsyncSessionLocal() as session:
@@ -38,8 +38,8 @@ async def seed() -> None:
 
         # Insert instructors, keep a key -> ORM object map for course FK linking.
         instructor_map: dict[str, Instructor] = {}
-        for data in INSTRUCTORS:
-            instructor = Instructor(name=data["name"], bio=data["bio"])
+        for i, data in enumerate(INSTRUCTORS):
+            instructor = Instructor(id=i+1, name=data["name"], bio=data["bio"])
             session.add(instructor)
             instructor_map[data["key"]] = instructor
         await session.flush()  # assigns generated UUIDs without committing yet
@@ -47,13 +47,15 @@ async def seed() -> None:
         # Insert courses, linking via the `instructor` relationship — SQLAlchemy
         # fills in instructor_id automatically from the related object.
         course_map: dict[str, Course] = {}
-        for data in COURSES:
+        for i, data in enumerate(COURSES):
             course = Course(
+                id = i + 1,
                 title=data["title"],
                 description=data["description"],
                 category=data["category"],
                 price=data["price"],
                 rating=data["rating"],
+                embedding = embed_text(f"{data["title"]} . {data["description"]}"),
                 instructor=instructor_map[data["instructor"]],
             )
             session.add(course)
@@ -62,8 +64,8 @@ async def seed() -> None:
 
         # Insert users.
         user_map: dict[str, User] = {}
-        for data in USERS:
-            user = User(name=data["name"], email=data["email"])
+        for i, data in enumerate(USERS):
+            user = User(id= i+1, name=data["name"], email=data["email"])
             session.add(user)
             user_map[data["key"]] = user
         await session.flush()

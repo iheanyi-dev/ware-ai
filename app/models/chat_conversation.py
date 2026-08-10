@@ -2,7 +2,7 @@
 import uuid
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, func, Text
+from sqlalchemy import DateTime, ForeignKey, func, Text, Integer
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -15,18 +15,17 @@ class ChatConversation(Base):
     together so history can be loaded/continued across multiple requests
     instead of the caller resending the full transcript every time.
     """
-
     __tablename__ = "chat_conversations"
 
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    id: Mapped[int] = mapped_column(
+        Integer, primary_key=True, autoincrement=True
     )
 
     # Nullable: the chatbot should work for anonymous/pre-login visitors
     # too (e.g. someone asking "how does this site work" before signing
     # up), not just enrolled users.
-    user_id: Mapped[uuid.UUID | None] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("users.id"), nullable=True, index=True
+    user_id: Mapped[int] = mapped_column(
+        Integer, ForeignKey("users.id"), nullable=True, index=True
     )
 
     created_at: Mapped[datetime] = mapped_column(
